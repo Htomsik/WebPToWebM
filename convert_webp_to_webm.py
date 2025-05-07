@@ -76,8 +76,11 @@ def convert_webp_to_webm(specific_file=None):
                     '-t', '3',
                     '-vf', 'scale=512:512:force_original_aspect_ratio=decrease,pad=512:512:-1:-1:color=black',
                     '-c:v', 'libvpx-vp9',
-                    '-crf', '30',
+                    '-crf', '40',
                     '-b:v', '0',
+                    '-deadline', 'best',
+                    '-cpu-used', '4',
+                    '-row-mt', '1',
                     '-fs', '256k',
                     str(output_file)
                 ], check=True)
