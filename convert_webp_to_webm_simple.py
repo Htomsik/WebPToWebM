@@ -21,6 +21,7 @@ def convert_webp_to_webm():
                 '-hide_banner',
                 '-loglevel', 'error',
                 '-i', str(webp_file),
+                '-vf', 'scale=512:512:force_original_aspect_ratio=decrease,pad=512:512:-1:-1:color=black',
                 '-c:v', 'libvpx-vp9',
                 '-crf', '30',
                 '-b:v', '0',
