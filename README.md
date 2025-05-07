@@ -1,6 +1,6 @@
 # WebP to WebM Converter
 
-Two scripts for converting animated WebP files to WebM format.
+Two scripts for converting animated WebP files to needed Telegram Sticers Webm format
 
 ## Requirements
 
