@@ -8,18 +8,22 @@ Two scripts for converting animated WebP files to needed Telegram Sticers Webm f
 - ffmpeg
 - ImageMagick (only for `convert_webp_to_webm.py`)
 
+
+## Limits for TG
+- File size 256 KB
+- Duration 3 second
+- Scale 512x512
+
 ## Scripts
 
 ### 1. convert_webp_to_webm_simple.py
 Simple converter that:
 - Converts WebP files directly using ffmpeg
-- Limits output file size to 256 KB
 
 ### 2. convert_webp_to_webm.py
 Advanced converter that:
 - First tries direct ffmpeg conversion
 - Falls back to ImageMagick (WebP → GIF → WebM) if needed
-- Limits output file size to 256 KB
 
 ## Usage
 
